@@ -1,0 +1,21 @@
+from vector import Vector
+
+v0 = Vector(3)
+v1 = Vector((3, 16))
+v3 = Vector([1.0, 2.3, 1.4])
+v4 = Vector([1.0, 1.0, 1.0])
+v5 = Vector([[0.0], [1.0], [2.0], [3.0]])
+v6 = Vector([[2.0], [1.5], [2.25], [4.0]])
+v7 = Vector([[1.0]])
+v8 = Vector([2.5])
+
+print(v3 + v4)
+print(v3.__radd__(v4))
+print(v4.dot(v3))
+print(v5)
+print(repr(v5))
+print(repr(v5.T()))
+print(f"{v5.values}, {v5.shape}")
+print(f"{v6.values}, {v6.shape}")
+print(4 * v3)
+print(v3 * 4)

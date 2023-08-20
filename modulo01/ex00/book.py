@@ -3,7 +3,7 @@ from recipe import Recipe
 
 class Book:
 	def __init__(self, name):
-		self.name = name
+		self.name = name  #se inicia con el valor que recibe el constructor cuando se crea una instancia de Book
 		self.creation_date = datetime.now()
 		self.last_update = self.creation_date
 		self.recipes_list = {'starter': [], 'lunch': [], 'dessert': []}
@@ -27,12 +27,12 @@ class Book:
 			#	type_names.append(recipe.name)
 			#return type_names
 
-
-"""	def get_recipe_by_name(self, name):
-"""
-
-		
-
-
-
-
+	def get_recipe_by_name(self, name):
+		for recipe_type in self.recipes_list: #recorre keys del diccinario
+			for recip in self.recipes_list[recipe_type]: #itera en cada receta
+				if recip.name == name: #compara el nombre de la receta actual con el nombre que ha recibido como argumento
+					print(f"You asked for the recipe {name}:")
+					print(recip)
+					return recip
+		print(f"recipe '{name}' not found")
+		return None

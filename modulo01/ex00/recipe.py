@@ -36,4 +36,3 @@ class Recipe:
 		txt += f"Recipe type: {self.recipe_type}\n"
 		return txt
 	
-
