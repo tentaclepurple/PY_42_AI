@@ -8,7 +8,7 @@ def ask():
 	Si el usuario introduce un valor no númerico (o intro) se produce un 
 	value error al intentar convertir en int y se devuelve None
 	"""
-	a = input("What's your guess between 1 and 99?\n")
+	a = input("What's your guess between 1 and 20?\n")
 	if a == 'exit':
 		print("Goodbye")
 		sys.exit()
@@ -38,7 +38,7 @@ def guess(num, inp):
 				print(f"You won in {tries} attempt(s)!")
 			sys.exit()
 
-num = random.randint(1, 99)
+num = random.randint(1, 21)
 #num = 42
 #print(num)
 tries = 1
@@ -48,7 +48,7 @@ print('You have to enter a number between 1 and 99 to find out the secret number
 print('Type "exit" to end the game.')
 print('Good luck!')
 print("\033[1;32mThis is an interactive guessing game!")
-print("You have to enter a number between 1 and 99", end="")
+print("You have to enter a number between 1 and 20", end="")
 print(" to find out the secret number.")
 print("Type\033[0m \033[1;31m'exit'\033[0m \033[1;32mto end the game.")
 print("\033[0m", end="")
