@@ -2,6 +2,7 @@ import csv
 import sys
 import requests
 
+"""
 def get_code():
     url = "https://www.dropbox.com/scl/fi/u18ocfuobwxt7lrh18s2d/MORSE.csv?rlkey=5z9j8fga9uejsvndi8pq8ggh8&dl=1"
     response = requests.get(url)
@@ -19,9 +20,9 @@ def get_code():
     else:
         print("Error al descargar el archivo")
         return None
+"""
 
-
-""" def get_code():
+def get_code():
     file = open('./MORSE.csv',mode='r', encoding='latin-1')
     fd = file.read()
     file.close()
@@ -34,7 +35,7 @@ def get_code():
             morse_code[leter] = code
     del morse_code[next(iter(morse_code))]
     return(morse_code)
- """
+
 morse_code = get_code()
 
 
