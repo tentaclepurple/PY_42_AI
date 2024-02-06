@@ -1,6 +1,6 @@
 import csv
 import sys
-import requests
+#import requests
 
 """
 def get_code():
