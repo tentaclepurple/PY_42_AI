@@ -38,7 +38,7 @@ def guess(num, inp):
 				print(f"You won in {tries} attempt(s)!")
 			sys.exit()
 
-num = random.randint(1, 21)
+num = random.randint(1, 20)
 #num = 42
 #print(num)
 tries = 1
